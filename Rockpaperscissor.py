@@ -30,3 +30,13 @@ class RockPaperScissor:
 # Create an instance of the game and play
 game = RockPaperScissor()
 game.play()
+
+
+
+
+
+
+
+
+
+

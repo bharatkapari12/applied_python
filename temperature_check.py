@@ -3,8 +3,7 @@ class TemperatureTracker:
         self.company_name = ''
         self.num_days = 0
         self.temperatures = []
-        self.temperature_categories = {
-            'very hot': 0, 'pleasant day': 0, 'very cold': 0}
+        self.temperature_categories = {'very hot': 0, 'pleasant day': 0, 'very cold': 0}
 
     def initial_display(self):
         self.company_name = input("Enter the company name: ")
@@ -16,7 +15,6 @@ class TemperatureTracker:
             temperature = int(input(f"Temperature day [{day}]: "))
             self.temperatures.append(temperature)
 
-        # Average Calculation
     def calculateTemperature(self):
         total_temperature = sum(self.temperatures)
         average_temperature = (total_temperature / self.num_days)
@@ -44,15 +42,13 @@ class TemperatureTracker:
         print(f"Number of pleasant days: {self.temperature_categories['pleasant day']} day/s")
         print(f"Number of very cold days: {self.temperature_categories['very cold']} day/s")
 
-
 def main():
     tt = TemperatureTracker()
     tt.initial_display()
     tt.input_data()
     tt.displayInformation()
     tt.finalDisplay()
-
-
+    
 main()
 
 
